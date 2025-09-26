@@ -13,7 +13,7 @@ setupExpress(app);
 mongoose.connect(uriMongo)
     .then(() => {
         console.log("✅ Connected to MongoDB");
-        app.listen();
+        server.listen();
     })
     .catch(error => {
         console.error("❌ MongoDB connection error:", error);
